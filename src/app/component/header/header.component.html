@@ -1,0 +1,41 @@
+<nav class="navbar  navbar-expand-md navbar-expand-lg bg-primary navbar-fixed-top ">
+    <div class="container-fluid">
+		<span class="navbar-brand logo-style"><span> Focus</span></span>
+
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid" aria-controls="navbarid" aria-expanded="false" aria-label="Toggle navigation">
+	 <span class="navbar-toggler-icon" ><i class="fa fa-bars" style="color: white;margin-top: 15%;"></i> </span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarid">
+		<ul class="navbar-nav  ml-auto" *ngIf=!isHidden>
+			<li class="nav-item">
+				<a href="#" class="nav-link"> <i class="fas fa-search"></i> <input type="name" name="Search" alt="Search " placeholder=" Search"></a>
+			</li>
+
+			<li class="nav-item">
+				<a href="#" class="nav-link active" routerLink="/user">user</a>
+			</li>
+			
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link" data-toggle="dropdown">My transaction</a>
+				
+			</li>
+			<li class="nav-item">
+				<a href="#Catagories" routerLink="/transaction" class="nav-link"> Do transaction</a>
+			</li>
+			<li class="nav-item">
+				<a routerLink="/add-money" class="nav-link">Add Money</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">{{userObj.name}}</a>
+			</li>
+
+			 
+    
+		</ul>
+</div>
+
+
+
+		</div>
+
+	</nav>

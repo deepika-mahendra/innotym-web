@@ -1,0 +1,21 @@
+
+<div class="container">
+<div class="col-md-6 offset-md-3">
+ <mat-card>
+    <form class="form-container"   (ngSubmit)="doTransaction()" novalidate [formGroup]="transactionForm">
+        <mat-form-field>
+            <input matInput placeholder="Amount" type="number" formControlName="amount">
+          </mat-form-field>
+
+          <mat-form-field>
+            <input matInput placeholder="User" type="text" formControlName="user">
+          </mat-form-field>
+
+          <div>
+            <button mat-raised-button type="submit" color="primary">Login</button>
+            <button mat-raised-button type="reset" color="default">Cancel</button>
+          </div>
+        </form>
+ </mat-card>
+</div>
+</div>
